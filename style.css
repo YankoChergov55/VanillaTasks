@@ -110,4 +110,5 @@ body {
 	display: flex;
 	margin: 5px;
 	font-size: 36px;
+	width: fit-content;
 }
