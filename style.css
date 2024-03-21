@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	outline: none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	background-color: rgb(20, 20, 20);
+}
+
+#app {
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 50%;
+	padding: 5px;
+}
+
+#input {
+	background: transparent;
+	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: solid 1px white;
+	color: white;
+	border-radius: 5px;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+#input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#input:focus {
+	border-bottom: solid 3px white;
+}
+
+#input:focus::placeholder {
+	color: transparent;
+}
+
+#list {
+	width: 90%;
+	margin: auto;
+}
+
+.todo {
+	color: white;
+	display: flex;
+	align-items: flex-end;
+	margin: 15px;
+	padding: 5px;
+	font-size: 20px;
+	box-sizing: border-box;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.377);
+}
+
+.todo:hover {
+	background-color: rgba(255, 255, 255);
+	color: black;
+}
+
+.todo .actions {
+	display: none;
+}
+
+.todo:hover .actions {
+	display: flex;
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.todo .actions span {
+	font-size: 20px;
+	margin-left: 5px;
+}
+
+.todo .actions .done:hover {
+	color: green;
+	cursor: pointer;
+}
+
+.todo .actions .del:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.markedDone {
+	text-decoration: line-through;
+	color: rgba(255, 255, 255, 0.541);
+}
